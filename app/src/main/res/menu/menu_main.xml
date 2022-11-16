@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.workoutfitnesstracker.MainActivity">
+    <item
+        android:id="@+id/statistic_button"
+        android:orderInCategory="102"
+        android:title="Statistics" />
+    <item
+        android:id="@+id/ResetButton"
+        android:orderInCategory="103"
+        android:title="Reset data" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>
