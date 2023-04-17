@@ -48,7 +48,7 @@ public class StatisticsActivity extends AppCompatActivity {
             totalCals+=workout.getCalories();
         }
 
-        calories.setText("Calories burnt:"+totalCals);
+        calories.setText(Integer.toString(totalCals));
 
     }
 

@@ -21,7 +21,7 @@ import java.util.List;
 
 public class ExersiseTrackingActivity extends AppCompatActivity {
     Button addButton;
-    EditText calories,time;
+    EditText calories,time,name;
     SharedPreferences preferences;
 
 
@@ -35,6 +35,8 @@ public class ExersiseTrackingActivity extends AppCompatActivity {
         calories=(EditText) findViewById(R.id.CaloriesEditText);
         time=(EditText) findViewById(R.id.ExersiseTimeEditText);
         addButton=(Button)findViewById(R.id.AddButton);
+        name=(EditText)findViewById(R.id.nameEditText);
+
 
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,8 +51,9 @@ public class ExersiseTrackingActivity extends AppCompatActivity {
 
         int caloriesNum= Integer.parseInt(calories.getText().toString());
         String timeText= time.getText().toString();
+        String nameText=name.getText().toString();
 
-        Workout workout=new Workout(caloriesNum,timeText);
+        Workout workout=new Workout(caloriesNum,timeText,nameText);
         //making a workout code
 
 

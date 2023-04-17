@@ -31,8 +31,8 @@ public class DarkmodeChecker extends android.app.Application {
 
         //set the repeating notification
         Calendar calendar = Calendar.getInstance();
-        calendar.set(Calendar.HOUR_OF_DAY, 9);
-        calendar.set(Calendar.MINUTE,53);
+        calendar.set(Calendar.HOUR_OF_DAY, 2);
+        calendar.set(Calendar.MINUTE,12);
         calendar.set(Calendar.SECOND, 10);
 
         Intent svc=new Intent(this, BackgroundSoundService.class);

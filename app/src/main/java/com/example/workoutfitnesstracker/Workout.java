@@ -7,10 +7,10 @@ public class Workout {
     private String time;
     private String name;
 
-    Workout(int calories, String time){
+    Workout(int calories, String time,String name){
         this.calories=calories;
         this.time=time;
-        this.name="name";
+        this.name=name;
     }
 
     public int getCalories() {
