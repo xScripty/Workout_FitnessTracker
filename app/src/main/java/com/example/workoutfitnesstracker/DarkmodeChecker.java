@@ -31,8 +31,8 @@ public class DarkmodeChecker extends android.app.Application {
 
         //set the repeating notification
         Calendar calendar = Calendar.getInstance();
-        calendar.set(Calendar.HOUR_OF_DAY, 2);
-        calendar.set(Calendar.MINUTE,12);
+        calendar.set(Calendar.HOUR_OF_DAY, 11);
+        calendar.set(Calendar.MINUTE,51);
         calendar.set(Calendar.SECOND, 10);
 
         Intent svc=new Intent(this, BackgroundSoundService.class);
@@ -47,7 +47,7 @@ public class DarkmodeChecker extends android.app.Application {
 
         AlarmManager MyAlarm = (AlarmManager) getSystemService(ALARM_SERVICE);
         MyAlarm.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
-                AlarmManager.INTERVAL_FIFTEEN_MINUTES, MyPendIntent);
+                AlarmManager.INTERVAL_DAY, MyPendIntent);
 
 
     }
